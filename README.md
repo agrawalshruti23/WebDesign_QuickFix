@@ -1,5 +1,8 @@
 <h1><centre><img src="Images/QuickFix-logo.png" height="40px" width="70px"> Project QuickFix</h1></centre>
 
+<h2>About</h2>
+An online platform for college students where they can know TAs better and book slots with ease. This platform is helpful not only for students but also for TAs and professors. TA can release slots according to their convenience and save time by giving FAQs for a particular assignment. Professor can track the performance of the TA by the review given by the students after each TA session.
+<br><br>
 <h2>🌟 Technologies To Be Used</h2>
 <ul>
  <li>Next JS</li>
