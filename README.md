@@ -1,6 +1,6 @@
 <h1><centre><img src="Images/QuickFix-logo.png" height="40px" width="70px"> Project QuickFix</h1></centre>
 
-<h1>🌟 Technologies To Be Used</h1>
+<h2>🌟 Technologies To Be Used</h2>
 <ul>
 <li>Next JS</li>
  <li>ExpressJS and MongoDB with NodeJS for the backend</li>
@@ -12,10 +12,9 @@
 </ul>
 <br><br>
 
-<h1>✅ User Stories</h1>
+<h2>✅ User Stories</h2>
 
-
-<h2>Client- Teaching Assistant:</h2>
+<h3>Client- Teaching Assistant:</h3>
 <ul>
 <li>View details of: </li>
 <ul>
@@ -28,10 +27,9 @@
 <li>Able to post its availability for scheduling the meeting</li>
 <li>Will receive emails on meetings being scheduled by students</li>
 </ul>
-<br><br>
+<br>
 
-
-<h2>Client- Student:</h2>
+<h3>Client- Student:</h3>
 <ul>
 <li>View details of:</li>
 <ul>
@@ -43,10 +41,9 @@
 <li>Able to book a slot with TA and receive an email for the scheduled meeting</li>
 <li>Able to rate the TAs anonymously</li>
 </ul>
-<br><br>
+<br>
 
-
-<h2>Future Scope<h2>
+<h3>Future Scope<h3>
 <hr>
 <h2>Client- Professor: </h2>
 <ul>
@@ -63,28 +60,29 @@
 </ul>
 <br><br>
 
-<h2>Client- Student: </h2>
+<h3>Client- Student: </h3>
 <ul>
 <li>Able to book a slot with Professor and receive an email for the scheduled meeting</li>
 </ul>
 <br><br>
 
-<h1>📊 Domain Model</h1>
+<h2>📊 Domain Model</h2>
+<img src="Images/DDD.jpeg" title="DDD">
 <br><br><br>
-<h2> Authorization </h2>
+
+<h2> Service Models </h2>
+<hr>
+<br>
+<h3> Authorization </h3>
 <img src="Images/Authentication.png" title="Authentication">
 <br><br><br>
-
-<h2> Slot Booking </h2>
-<img src="Images/Authentication.png" title="Slot Booking">
-
+<h3> Slot Booking </h3>
+<img src="Images/Slot Booking.png" title="Slot Booking">
 <br> <br>
-<h3>
-👥 Authors</h3>
+<h2>👥 Authors</h2>
 <ul>
 <li>Harsh Agarwal - </li>
-<li>Anirban Dutta - </li>
+<li>Anirban Dutta - 002979520</li>
 <li>Shruti Agrawal - 002771205</li>
-<li>Payal Khatri - 002775303 </li>
+<li>Payal Khatri - 002775303</li>
 </ul>
-<h3>
