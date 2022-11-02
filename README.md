@@ -1,13 +1,13 @@
-<h1><centre><img src="Images/QuickFix-logo.png" height="40px" width="70px"> Project QuickFix</h1></centre>
+<h1><centre><img src="images/QuickFix-logo.png" height="40px" width="70px"> Project QuickFix</h1></centre>
 
 <h2>🌟 Technologies To Be Used</h2>
 <ul>
-<li>Next JS</li>
+ <li>Next JS</li>
  <li>ExpressJS and MongoDB with NodeJS for the backend</li>
  <li>Authentication using JWT</li>
- <li>Browse restaurants on the map (Mapbox API)</li>
- <li>Typescript with ReactJS</li>
- <li>Webpack with ESLint, Prettier, Husky with lint-staged</li>
+ <li>Typescript</li>
+ <li>Redis</li>
+ <li>Webpack with ESLint, Prettier</li>
  <li>SCSS for styling</li>
 </ul>
 <br><br>
@@ -20,11 +20,11 @@
 <ul>
 <li>Course professor</li>
 <li>All the students in the course</li>
-<li>Its overall rating from students, received anonymously</li>
+<li>His overall rating from students, received anonymously</li>
 </ul>
-<li>Able to enter its basic information which will be visible to all the course students (LinkedIn URL / course-related information)</li>
+<li>Able to enter his basic information which will be visible to all the course students (LinkedIn URL / course-related information)</li>
 <li>Able to post the most frequently asked student doubts to save time</li>
-<li>Able to post its availability for scheduling the meeting</li>
+<li>Able to post his availability for scheduling the meeting</li>
 <li>Will receive emails on meetings being scheduled by students</li>
 </ul>
 <br>
@@ -45,7 +45,7 @@
 
 <h3>Future Scope<h3>
 <hr>
-<h2>Client- Professor: </h2>
+<h3>Client- Professor: </h3>
 <ul>
 <li>View details of: </li>
 <ul>
@@ -67,21 +67,21 @@
 <br><br>
 
 <h2>📊 Domain Model</h2>
-<img src="Images/DDD.jpeg" title="DDD">
+<img src="images/DDD.jpeg" title="DDD">
 <br><br><br>
 
 <h2> Service Models </h2>
 <hr>
 <br>
 <h3> Authorization </h3>
-<img src="Images/Authentication.png" title="Authentication">
+<img src="images/Authentication.png" title="Authentication">
 <br><br><br>
 <h3> Slot Booking </h3>
-<img src="Images/Slot Booking.png" title="Slot Booking">
+<img src="images/Slot Booking.png" title="Slot Booking">
 <br> <br>
 <h2>👥 Authors</h2>
 <ul>
-<li>Harsh Agarwal - </li>
+<li>Harsh Agarwal - 002750125</li>
 <li>Anirban Dutta - 002979520</li>
 <li>Shruti Agrawal - 002771205</li>
 <li>Payal Khatri - 002775303</li>
