@@ -1,4 +1,4 @@
-<h1><centre><img src="images/QuickFix-logo.png" height="40px" width="70px"> Project QuickFix</h1></centre>
+<h1><centre><img src="Images/QuickFix-logo.png" height="40px" width="70px"> Project QuickFix</h1></centre>
 
 <h2>🌟 Technologies To Be Used</h2>
 <ul>
@@ -67,17 +67,17 @@
 <br><br>
 
 <h2>📊 Domain Model</h2>
-<img src="images/DDD.jpeg" title="DDD">
+<img src="Images/DDD.jpeg" title="DDD">
 <br><br><br>
 
 <h2> Service Models </h2>
 <hr>
 <br>
 <h3> Authorization </h3>
-<img src="images/Authentication.png" title="Authentication">
+<img src="Images/Authentication.png" title="Authentication">
 <br><br><br>
 <h3> Slot Booking </h3>
-<img src="images/Slot Booking.png" title="Slot Booking">
+<img src="Images/Slot Booking.png" title="Slot Booking">
 <br> <br>
 <h2>👥 Authors</h2>
 <ul>
