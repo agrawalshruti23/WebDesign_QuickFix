@@ -1,9 +1,6 @@
 
 import mongoose from "mongoose";
 import bcrypt from "bcrypt";
-// import jwt from "jsonwebtoken";
-// const bcrypt = require('bcryptjs')
-// const jwt           = require('jsonwebtoken')
 
 const UserSchema = new mongoose.Schema(
   {
@@ -23,9 +20,8 @@ const UserSchema = new mongoose.Schema(
     userType:{
         type: mongoose.Schema.ObjectId,
         ref: 'userRoles',
-        required: [true, 'Please Select a Type']
+        required: [true, 'Please Select a Type'],
     },
-    //stories: [{ type: Schema.Types.ObjectId, ref: 'Story' }]
     currentCourses:[{ type: mongoose.Schema.ObjectId, ref: 'Courses' }],
     firstName:{
         type:String,
@@ -36,7 +32,7 @@ const UserSchema = new mongoose.Schema(
         required: true,
     },versionKey: false});
 
-    
+
 UserSchema.methods.comparePassword = function(password) {
     return bcrypt.compareSync(password, this.password);
 };

@@ -18,7 +18,7 @@ const CoursesSchema = new mongoose.Schema(
         },
         assignment:{
             type:String,
-            required: true,
+            // required: true,
         },
         description:{
             type:String,
@@ -26,7 +26,6 @@ const CoursesSchema = new mongoose.Schema(
         },
         currentAssignment:{
             type:String,
-            required: true,
         },versionKey: false});
     
 const model = new mongoose.model("Courses", CoursesSchema);
