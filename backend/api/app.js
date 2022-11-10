@@ -12,6 +12,16 @@ app.use(express.urlencoded());
 app.use(cors());
 router(app);
 
+//database connection
+mongoose.connect("mongodb://localhost:27017/UserDatabase")
+  .then(() => console.log("Connected to mongodb"))
+  .catch((err) => console.log(err));
 
 
 export default app;
+
+
+
+
+
+
