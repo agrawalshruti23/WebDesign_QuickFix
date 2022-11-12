@@ -1,4 +1,3 @@
-
 import mongoose from "mongoose";
 import bcrypt from "bcrypt";
 
@@ -18,11 +17,11 @@ const UserSchema = new mongoose.Schema(
         required: [true, 'Please add a password.'],
     },
     userType:{
-        type: mongoose.Schema.ObjectId,
+        type: mongoose.Types.ObjectId,
         ref: 'userRoles',
         required: [true, 'Please Select a Type'],
     },
-    currentCourses:[{ type: mongoose.Schema.ObjectId, ref: 'Courses' }],
+    currentCourses:[{ type: mongoose.Types.ObjectId, ref: 'Courses' }],
     firstName:{
         type:String,
         required: true,
@@ -37,7 +36,7 @@ UserSchema.methods.comparePassword = function(password) {
     return bcrypt.compareSync(password, this.password);
 };
 
-const model = new mongoose.model("UserDetails", UserSchema);
+const model = mongoose.model("UserDetails", UserSchema);
 
 export default model;
 

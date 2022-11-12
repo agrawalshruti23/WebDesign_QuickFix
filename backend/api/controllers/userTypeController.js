@@ -1,4 +1,3 @@
-import { query } from "express";
 import * as model_service from '../services/userTypeService.js';
 import * as controllerHelper from './../modules/controllerHelper.js';
 

@@ -1,4 +1,3 @@
-
 import mongoose from "mongoose";
 
 const CoursesSchema = new mongoose.Schema(
@@ -18,7 +17,6 @@ const CoursesSchema = new mongoose.Schema(
         },
         assignment:{
             type:String,
-            // required: true,
         },
         description:{
             type:String,
@@ -28,6 +26,6 @@ const CoursesSchema = new mongoose.Schema(
             type:String,
         },versionKey: false});
     
-const model = new mongoose.model("Courses", CoursesSchema);
+const model = mongoose.model("Courses", CoursesSchema);
 
 export default model;

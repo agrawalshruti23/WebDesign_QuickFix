@@ -13,5 +13,4 @@ router.route('/:id')
 .get(courseController.getAllDetailsUsingId);
 
 
-
 export default router;

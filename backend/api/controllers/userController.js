@@ -1,5 +1,4 @@
-import { query } from "express";
-import * as model_service from '../services/service.js';
+import * as model_service from '../services/userService.js';
 import bcrypt from "bcrypt";
 import * as controllerHelper from '../modules/controllerHelper.js';
 

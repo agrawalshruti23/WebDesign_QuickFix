@@ -1,4 +1,4 @@
-import userModel from './../models/User.js'
+import userModel from '../models/User.js'
 
 
 export const save = (userId) => {

@@ -1,15 +1,12 @@
-import { query } from "express";
+
 import * as model_service from './../services/courseService.js';
 import * as controllerHelper from './../modules/controllerHelper.js';
 
-
 export const getAllDetails = async (req, res) => {
     try {
-        // console.log("Hello error")
         const courseItem = await model_service.find();
         controllerHelper.setResponse(courseItem,res);
     }catch(error){
-        console.log("Error is", error)
         controllerHelper.setError(error,res);
     }
 }
@@ -21,7 +18,6 @@ export const getAllDetailsUsingId = async(req, res) =>{
         controllerHelper.setResponse(courseItem,res);
     }
     catch(error){
-        console.log("error is", error)
         controllerHelper.setError(error,res);
     }
 }
