@@ -1,5 +1,4 @@
 import userRoleModel from './../models/UserType.js';
-// import userModel from './../models/User.js';
 
 
 export const save = (userId) => {
