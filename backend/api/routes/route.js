@@ -1,5 +1,5 @@
 import express from "express";
-import * as userController from "../controllers/controller.js";
+import * as userController from "../controllers/userController.js";
 import * as courseController from "../controllers/coursesController.js";
 import * as userTypeController from "../controllers/userTypeController.js";
 
@@ -7,26 +7,26 @@ import * as userTypeController from "../controllers/userTypeController.js";
 const router = express.Router();
 
 router.route('/')
-.post(userController.useritem_create)
-.get(userController.useritem_all);
+.post(userController.createAllDetails)
+.get(userController.getAllDetails);
 
 router.route('/:id')
-.get(userController.useritem_details);
+.get(userController.getAllDetailsUsingId);
 
 router.route('/courses/')
-.post(courseController.courseitem_create)
-.get(courseController.courseitem_all);
+.post(courseController.createAllDetails)
+.get(courseController.getAllDetails);
 
 router.route('/courses/:id')
-.get(courseController.courseitem_details);
+.get(courseController.getAllDetailsUsingId);
 
 
 router.route('/userType/')
-.post(userTypeController.userTypeitem_create)
-.get(userTypeController.userTypeitem_all);
+.post(userTypeController.createAllDetails)
+.get(userTypeController.getAllDetails);
 
 router.route('/userType/:id')
-.get(userTypeController.userTypeitem_details);
+.get(userTypeController.getAllDetailsUsingId);
 
 
 export default router;

@@ -1,43 +1,35 @@
 import { query } from "express";
 import * as model_service from '../services/userTypeService.js';
+import * as controllerHelper from './../modules/controllerHelper.js';
 
-const setResponse =(obj, response) =>{
-    response.status(200);
-    response.json(obj);
-}
-
-const setError =(err,response) => {
-    response.status(500);
-    response.json(err);
-}
-
-export const userTypeitem_all = async (req, res) => {
+export const getAllDetails = async (req, res) => {
     try {
-        const userTypeItem = await model_service.find();
-           setResponse(userTypeItem,res);
+        const userTypeitem = req.body;
+        const userTypeItem = await model_service.find(userTypeitem);
+        controllerHelper.setResponse(userTypeItem,res);
     }catch(error){
-        setError(error,res);
+        controllerHelper.setError(error,res);
     }
 }
 
-export const userTypeitem_details = async(req, res) =>{
+export const getAllDetailsUsingId = async(req, res) =>{
     try{
         const userTypeitemId = req.params.id;
         const userTypeItem= await model_service.get(userTypeitemId);
-        setResponse(userTypeItem,res);
+        controllerHelper.setResponse(userTypeItem,res);
     }
     catch(error){
-        setError(error,res);
+        controllerHelper.setError(error,res);
     }
 }
 
-export const userTypeitem_create = async(req, res) =>{
+export const createAllDetails = async(req, res) =>{
     try{
         console.log("course item Request is", req.body)
         const userTypeItem = req.body;
         const savedUserTypeitem= await model_service.save(userTypeItem);
-    setResponse(savedUserTypeitem,res);
+        controllerHelper.setResponse(savedUserTypeitem,res);
     }catch(error){
-        setError(error,res);
+        controllerHelper.setError(error,res);
     }
 }

@@ -1,5 +1,4 @@
 import courseModel from './../models/courses.js'
-// import userRoleModel from './../models/UserType.js'
 
 export const save = (userId) => {
     const courseItem = new courseModel(userId);

@@ -1,4 +1,6 @@
-import userRoleModel from './../models/UserType.js'
+import userRoleModel from './../models/UserType.js';
+// import userModel from './../models/User.js';
+
 
 export const save = (userId) => {
     const userTypeItem = new userRoleModel(userId);
@@ -15,7 +17,7 @@ export const search = (query) => {
     return userRoleModel.find(params).exec();
 }
 
-export const find =() =>{
+export const find = () =>{
     const userTypeItem = userRoleModel.find();
     return userTypeItem;
 }
