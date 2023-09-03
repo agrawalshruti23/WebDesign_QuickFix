@@ -1,14 +1,20 @@
-import router from './route.js';
-import coursesRouter from './coursesRouter.js';
-import userTypeRouter from './userTypeRouter.js';
+import userRouter from './userRoute';
 
-//setting default route 
-const routes =(app) =>{
-    app.use('/ping',(req,res)=>res.send('ping pong'))
-    app.use('/api/courses',coursesRouter);
-    app.use('/api/userType',userTypeRouter);
-    app.use('/api',router);
-   
-}
+import assignmentRouter from './assignmentRoute';
+import coursesRouter from './coursesRoute';
+import coursesUserRouter from './courseUserRouter';
+import availableTASlotRouter from './teachingAssistantSlotRoute';
+import bookingRouter from './bookingRoute';
+
+//setting default route
+const routes = (app) => {
+  app.get('/ping', (req, res) => res.send('poing'));
+  app.use('/courses/user', coursesUserRouter);
+  app.use('/courses', coursesRouter);
+  app.use('/user', userRouter);
+  app.use('/user/assignment', assignmentRouter);
+  app.use('/slot', availableTASlotRouter);
+  app.use('/booking', bookingRouter);
+};
 
 export default routes;

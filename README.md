@@ -5,15 +5,41 @@ An online platform for college students where they can know TAs better and book 
 <br><br>
 <h2>🌟 Technologies To Be Used</h2>
 <ul>
- <li>Next JS</li>
+ <li>ReactJS</li>
  <li>ExpressJS and MongoDB with NodeJS for the backend</li>
  <li>Authentication using JWT</li>
  <li>Typescript</li>
- <li>Redis</li>
+ <li>Nodemailer</li>   
  <li>Webpack with ESLint, Prettier</li>
  <li>SCSS for styling</li>
 </ul>
 <br><br>
+
+<h2>Installation Steps</h2>
+<ol>
+    <li>
+        <h3>Frontend</h3>
+        <code>
+            npm install
+        </code>
+    </li>
+    <li>
+        <h3>Backend</h3>
+        <p>Add .env file at root of backend folder and add</p>
+        <ul>
+            <li>JWT_TOKEN=Your JWT TOKEN</li>
+            <li>DB_URL=mongodb://localhost:27017</li>
+            <li>DB=quickfix</li>
+            <li>PORT=3001</li>
+            <li>EMAIL=Your Email ID</li>
+            <li>PASSWORD=Email ID password</li>
+        </ul>
+        <br/>
+        <p>and then run <code>npm install</code></p>
+    </li>
+</ol>
+<br><br>
+
 
 <h2>✅ User Stories</h2>
 
@@ -23,7 +49,6 @@ An online platform for college students where they can know TAs better and book 
 <ul>
 <li>Course professor</li>
 <li>All the students in the course</li>
-<li>His overall rating from students, received anonymously</li>
 </ul>
 <li>Able to enter his basic information which will be visible to all the course students (LinkedIn URL / course-related information)</li>
 <li>Able to post the most frequently asked student doubts to save time</li>
@@ -38,11 +63,10 @@ An online platform for college students where they can know TAs better and book 
 <ul>
 <li>Courses the student is enrolled in</li>
 <li>List of professor and teaching assistants for each course</li>
-<li>Each TA (Their information such as LinkedIn profile and rating)</li>
+<li>Each TA (Their information such as LinkedIn profile and work experience)</li>
 <li>FAQs related to various assignments and general queries</li>
 </ul>
 <li>Able to book a slot with TA and receive an email for the scheduled meeting</li>
-<li>Able to rate the TAs anonymously</li>
 </ul>
 <br>
 
